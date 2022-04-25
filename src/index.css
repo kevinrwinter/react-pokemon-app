@@ -6,10 +6,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
 header,
 footer {
   background-color: #333;
@@ -21,25 +17,27 @@ header {
   /* border: 1px solid white; */
   display: flex;
   flex-flow: row wrap;
+  /* align-items: center; */
   justify-content: space-between;
-  /* align-items: baseline; */
+  align-items: baseline;
 }
 
 main {
-  min-height: 85vh;
+  min-height: calc(100vh - 150px);
   background-color: antiquewhite;
-  /* min-height: calc(100vh - 150px); */
+  /* min-height: 85vh; */
+  min-height: calc(100vh - 200px);
 }
 
 ul {
   list-style: none;
-  display: flex;
-  margin-right: 1rem;
+  /* display: flex; */
+  /* margin-right: 1rem; */
 }
 
-li a {
-  font-size: 1.2rem;
-  text-decoration: underline;
+li {
+  display: inline-block;
+  margin: 1rem;
 }
 
 a {
@@ -47,7 +45,7 @@ a {
   color: #e310cb;
   /* color: #ffe100; */
   /* text-decoration: none; */
-  margin-left: 1.25rem;
+  /* margin-left: 1.25rem; */
 }
 
 a:hover {
@@ -57,8 +55,9 @@ a:hover {
 
 footer {
   min-height: 5vh;
+  display: flex;
   text-align: center;
-  padding-top: 1.5rem;
-  /* justify-content: center; */
-  /* align-items: center; */
+  /* padding-top: 1.5rem; */
+  justify-content: center;
+  align-items: center;
 }
