@@ -13,11 +13,52 @@ code {
 header,
 footer {
   background-color: #333;
-  height: 20vh;
   color: #fff;
 }
 
+header {
+  height: 10vh;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* align-items: baseline; */
+}
+
 main {
-  min-height: 60vh;
+  min-height: 85vh;
   background-color: antiquewhite;
+  /* min-height: calc(100vh - 150px); */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin-right: 1rem;
+}
+
+li a {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+a {
+  color: #fff;
+  color: #e310cb;
+  /* color: #ffe100; */
+  /* text-decoration: none; */
+  margin-left: 1.25rem;
+}
+
+a:hover {
+  color: #ffe100;
+  color: crimson;
+}
+
+footer {
+  min-height: 5vh;
+  text-align: center;
+  padding-top: 1.5rem;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
