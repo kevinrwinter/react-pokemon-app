@@ -9,7 +9,7 @@ class PokeList extends Component {
 
   componentDidMount() {
     this.setState({ isLoading: true });
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0")
+    fetch("https://pokeapi.co/api/v2/pokemon?limit=100&offset=0")
       .then((res) => res.json())
       .then((data) => {
         const fetches = data.results.map((p) => {
