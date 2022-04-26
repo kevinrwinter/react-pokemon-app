@@ -5,8 +5,7 @@ const PokeList = () => {
   return (
     <div>
       PokeList will be here. This will be a list of Pokemon
-      <Link to="/pokesingle">Show more info: </Link>
-      <Outlet />
+      <Link to="pokesingle">Show more info: </Link>
     </div>
   );
 };
