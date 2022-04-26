@@ -23,10 +23,11 @@ header {
 }
 
 main {
-  min-height: calc(100vh - 150px);
+  /* min-height: calc(100vh - 150px); */
   background-color: antiquewhite;
-  /* min-height: 85vh; */
-  min-height: calc(100vh - 200px);
+  min-height: 85vh;
+  /* min-height: calc(100vh - 200px); */
+  padding: 2rem 1rem;
 }
 
 ul {
@@ -60,4 +61,38 @@ footer {
   /* padding-top: 1.5rem; */
   justify-content: center;
   align-items: center;
+}
+
+.poke-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  justify-content: space-between;
+}
+
+.poke-card {
+  box-shadow: 0 0 5px rgb(92, 92, 92);
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  height: auto;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid black;
+
+  width: 130px;
+  /* background-color: rebeccapurple; */
+
+  margin: 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.poke-img {
+  /* background-image: url("https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"); */
+  width: 80%;
+  /* height: 40%; */
 }
